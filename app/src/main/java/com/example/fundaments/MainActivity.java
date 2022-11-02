@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         Button cancelBut = findViewById(R.id.cancel);
 
         signUpText.setOnClickListener(view -> openSignUp());
-
         cancelBut.setOnClickListener(view -> super.onBackPressed());
 
     }
