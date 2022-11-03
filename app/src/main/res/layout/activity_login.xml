@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
     tools:context=".MainActivity">
 
 
@@ -16,7 +15,7 @@
         android:src="@drawable/ic_world"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilusername"
@@ -31,8 +30,8 @@
         >
 
         <EditText
-            android:hint="@string/username"
-            style="@style/UsernameEText" />
+            style="@style/UsernameEText"
+            android:hint="@string/username" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,8 +46,8 @@
         app:startIconDrawable="@android:drawable/ic_lock_idle_lock">
 
         <EditText
-            android:hint="@string/password"
-            style="@style/PasswordEText">
+            style="@style/PasswordEText"
+            android:hint="@string/password">
 
         </EditText>
 
