@@ -14,9 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="MyTheme" parent="Theme.Fundaments">
-        <item name="android:backgroundTint">@color/purple_200</item>
     </style>
     <style name="MyTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:backgroundTint">@color/purple_200</item>
     </style>
 </resources>
