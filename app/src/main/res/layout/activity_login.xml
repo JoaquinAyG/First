@@ -15,7 +15,7 @@
         android:scaleType="centerCrop"/>
 
     <ImageView
-        android:id="@+id/tree"
+        android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="128dp"
@@ -31,7 +31,7 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/tree"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         app:startIconDrawable="@android:drawable/ic_btn_speak_now"
 
         >
@@ -79,14 +79,16 @@
         app:layout_constraintStart_toEndOf="@id/login"
         app:layout_constraintTop_toTopOf="@id/login" />
 
-    <TextView
-        android:id="@+id/signUpText"
+    <Button
+        android:id="@+id/signup"
+        style="@style/LinedButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/sign_up_question"
+        android:layout_marginStart="0dp"
+        android:text="@string/signUp"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
-        app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/cancel" />
+        app:layout_constraintStart_toEndOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/login" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
