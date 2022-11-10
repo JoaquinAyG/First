@@ -36,13 +36,14 @@ public class MainActivity extends AppCompatActivity {
         Button cancelBut = findViewById(R.id.cancel);
 
         signupBut.setOnClickListener(view -> openSignUp());
-
         cancelBut.setOnClickListener(view -> super.onBackPressed());
 
     }
 
     private void openSignUp() {
         Intent i = new Intent(this, ActivitySignup.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
     }
 }
