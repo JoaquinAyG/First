@@ -2,6 +2,8 @@ package com.study.fundaments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import com.bumptech.glide.Glide
 import android.widget.ImageView
 
@@ -13,8 +15,9 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        var bg  = findViewById<ImageView>(R.id.backgroundSpash)
+        val bg  = findViewById<ImageView>(R.id.backgroundSpash)
 
+        bg.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate))
 
         Glide.with(this)
                 .load(R.drawable.gradient_img)
