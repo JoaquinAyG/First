@@ -17,11 +17,7 @@ class Splash : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         openApp()
 
-        val bg  = findViewById<ImageView>(R.id.backgroundSpash)
-
-        Glide.with(this)
-                .load(R.drawable.gradient_img)
-                .into(bg)
+        val bg  = findViewById<ImageView>(R.id.bg)
 
         bg.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate))
 

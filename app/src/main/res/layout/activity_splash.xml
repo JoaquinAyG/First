@@ -8,11 +8,15 @@
     tools:ignore="MissingConstraints">
 
     <ImageView
-        android:id="@+id/backgroundSpash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/guidelineOutV"
-        app:layout_constraintTop_toTopOf="@id/guidelineOutH"/>
+        android:id="@+id/bg"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guideline5"
+        app:layout_constraintBottom_toBottomOf="@id/guideline6"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:src="@drawable/gradient_img"
+        android:scaleType="centerCrop"/>
 
     <ImageView
         android:id="@+id/logo"
@@ -25,18 +29,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guidelineOutV"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="-2" />
+        app:layout_constraintGuide_percent="-1.4" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/guidelineOutH"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="-2" />
+        app:layout_constraintGuide_percent="-0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.4" />
 
 
 
