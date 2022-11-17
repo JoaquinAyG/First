@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class ActivitySignup : AppCompatActivity() {
+class Signup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
@@ -19,7 +19,7 @@ class ActivitySignup : AppCompatActivity() {
     }
 
     private fun openLogIn() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, Login::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
         startActivity(intent)
