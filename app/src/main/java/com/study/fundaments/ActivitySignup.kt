@@ -1,4 +1,4 @@
-package com.example.fundaments
+package com.study.fundaments
 
 import android.content.Intent
 import android.os.Bundle
