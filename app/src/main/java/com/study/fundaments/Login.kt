@@ -39,6 +39,16 @@ class Login : AppCompatActivity() {
         signupBut.setOnClickListener { openSignUp() }
 
         cancelBut.setOnClickListener { super.onBackPressed() }
+
+        val loginBut = findViewById<Button>(R.id.login)
+
+        loginBut.setOnClickListener{
+            val intent = Intent(this, Main::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
+        }
+
     }
 
     private fun openSignUp() {
