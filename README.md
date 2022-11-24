@@ -35,7 +35,7 @@
 - Here we can see the splash screen, with a simple animation and a logo.
 ![Login](img/Login.png)
 - Here we can see the login screen, with a simple animation, the profile picture, and the login credentials input.
-![Register](img/Signin.png)
+![Register](img/SignIn.png)
 - Here we can see the register screen, with a simple animation, the profile picture, and the register credentials input, both this views can navigate to each other or commit to the main view.
 ![Main](img/Main.png)
 - Here we can see the main screen, for now it only contain a picture and some action that will later be implemented.
