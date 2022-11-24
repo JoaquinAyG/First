@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Fundaments</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_up_question">Have you got an account? Sign up here</string>
+    <string name="register">Register</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="mail">Mail</string>
+    <string name="alredy_have_acc">Alredy have an account? Log in here</string>
+    <string name="signUp">Sing Up</string>
 </resources>

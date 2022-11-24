@@ -1,4 +1,4 @@
-package com.example.fundaments;
+package com.study.fundaments;
 
 import android.content.Context;
 
