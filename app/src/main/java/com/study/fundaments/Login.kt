@@ -18,14 +18,9 @@ class Login : AppCompatActivity() {
         val logo = findViewById<ImageView>(R.id.logo)
 
         Glide.with(this)
-                .load("https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png")
+                .load(R.drawable.profile)
                 .circleCrop()
                 .into(logo)
-
-        Glide.with(this) //.load(R.drawable.girl)
-                .load("https://miro.medium.com/max/4800/1*r2AuXvDuxdRWCqvmBhlssw.png")
-                .centerCrop()
-                .into(bg)
 
         Glide.with(this)
                 .load(R.drawable.gradient_img)
