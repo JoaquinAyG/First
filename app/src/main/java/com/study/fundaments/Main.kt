@@ -8,8 +8,10 @@ import android.view.MenuItem
 import android.view.View
 import android.webkit.WebView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
 class Main : AppCompatActivity() {
@@ -74,22 +76,44 @@ class Main : AppCompatActivity() {
                 toast4.show()
                 true
             }
-            R.id.mainBab -> {
-                val toast4 = Toast.makeText(this@Main, "To main Bab", Toast.LENGTH_LONG)
+            R.id.bottom_app -> {
+                val toast4 = Toast.makeText(this@Main, "To bottom ap", Toast.LENGTH_LONG)
                 toast4.show()
                 true
             }
-            R.id.mainBn -> {
-                val toast4 = Toast.makeText(this@Main, "To main Bn", Toast.LENGTH_LONG)
+            R.id.bottom_nav -> {
+                val toast4 = Toast.makeText(this@Main, "To bottom nav", Toast.LENGTH_LONG)
                 toast4.show()
                 true
             }
-            R.id.signOut -> {
-                intent = Intent(this@Main, Login::class.java)
-                startActivity(intent)
+            R.id.close -> {
+                oppenLeaveDialog()
                 true
             }
             else -> return super.onOptionsItemSelected(item)
         }
+    }
+
+    private fun oppenLeaveDialog() {
+        val builder = MaterialAlertDialogBuilder(this)
+        builder.setTitle(R.string.leave)
+        builder.setMessage(R.string.leave_dialog)
+        builder.setIcon(R.drawable.ic_baseline_logout_24)
+        builder.setCancelable(false)
+
+        builder.setPositiveButton(R.string.logout) { dialog, which ->
+            intent = Intent(this@Main, Login::class.java)
+            startActivity(intent)
+            dialog.dismiss()
+        }
+
+        builder.setNegativeButton(
+            R.string.cancel
+        ) { dialog, _ ->
+            dialog.dismiss()
+        }
+
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
     }
 }
