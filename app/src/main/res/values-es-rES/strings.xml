@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancelar</string>
+    <string name="password">Contraseña</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="sign_up_question">Tienes ya una cuenta? Registrate</string>
+    <string name="register">Registro</string>
+    <string name="repeat_password">Repetir Contraseña</string>
+    <string name="alredy_have_acc">Ya tienes una cuenta? Log in</string>
+    <string name="signUp">Registrarse</string>
+    <string name="more_options">Más opciones</string>
+    <string name="settings">Ajustes</string>
+    <string name="bottom_app_bar">Final de la app</string>
+    <string name="bottom_navigation">Final de la nav</string>
+    <string name="logout">Salir</string>
+    <string name="leave">Salir?</string>
+    <string name="leave_dialog">Seguro que quieres salir?</string>
+</resources>
